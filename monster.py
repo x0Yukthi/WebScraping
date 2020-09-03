@@ -6,7 +6,6 @@ url = "https://www.monster.com/jobs/search/?q=Software-Developer&where=India"
 wpages = requests.get(url)
 bs = BeautifulSoup(wpages.content, 'html.parser')
 results = bs.find(id='ResultsContainer')
-#print(results.prettify())
 job_elems = results.find_all('section', class_='card-content')
 for job_elem in job_elems:
     title_elem = job_elem.find('h2', class_='title')
