@@ -1,2 +1,2 @@
 # WebScraping
-Learning web scraping basic 
+Learning web scraping basics
