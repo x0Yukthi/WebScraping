@@ -14,12 +14,15 @@ actual_price = phn.find('div', class_='_3I9_wc _27UcVY').text
 emi = phn.find('div', class_='_2ZdXDB').text
 
 # To print the details
-print()
-print('*' * 90)
-print('PHONE NAME --> ', phn_name)
-print('\nCONFIGURATION --> ', phn_cong.replace(' | ', '\n'))
-print('\nPRODUCT PRICE -->', actual_price)
-print('\nOFFER PRICE --> ', phn_price)
-print(f'\nOTHER DETAILS --> {emi}')
-print('*' * 90)
+print(f'''
+
+PHONE DETAILS
+
+PHONE NAME --> {phn_name}
+CONFIGURATION --> {phn_cong}
+PRODUCT PRICE --> {actual_price}
+OFFER PRICE --> {phn_price}
+OTHER DETAILS --> {emi}'
+
+''')
 
